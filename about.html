@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - BINI</title>
+    <meta name="description" content="Learn more about the artist Elena R., her creative process, and artistic vision.">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imageimages/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-layout {
+            display: grid;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-layoutright {
+            display: grid;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-img {
+            border-radius: 4px;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+        }
+
+        .about-img:hover {
+            box-shadow: var(--shadow-hover);
+        }
+
+        .about-text h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .about-text blockquote {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--text-main);
+            border-left: 3px solid var(--accent);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        @media (min-width: 768px) {
+            .about-layout {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-layoutright {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">BINI MEMBERS</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="section">
+            <div class="container margin-top-header" style="padding-top: 4rem;">
+                <h1 class="section-title animate-fade-in-up">The Walo</h1>
+
+                <div class="about-layout">
+                    <div class="about-img-wrap animate-fade-in-up delay-1">
+                        <img class="about-img" src="images/artists/jhoanna.jpg" alt="Artist working in studio"
+                            loading="lazy">
+                    </div>
+                    <div class="about-text animate-fade-in-up delay-2">
+                        <h2>Bini Jhoanna</h2>
+                        <p><em><strong class="jho_artist">Jhoanna Christine Burgos Robles </strong></em> (born January
+                            26,
+                            2004), known
+                            as
+                            Jhoanna, is a
+                            Filipino singer, actress and dancer under Star Music. She is the leader of the Filipino girl
+                            group Bini.
+                        </p>
+                        <blockquote>
+                            Main Rapper, Sub-vocalist, Lead Dancer
+                        </blockquote>
+                        <p>Birthdate: July 13, 2003 <br>
+                            Zodiac Sign: Cancer <br>
+                            Height: 168 centimeters <br>
+                            Favorite Color: Pink</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-layoutright">
+                    <div class="about-text animate-fade-in-up delay-2">
+                        <h2>Bini Stacey</h2>
+                        <p><em><strong class="stacey_artist">Lindtsey Stacey Aubrey Sevilleja</strong></em> (born July
+                            13, 2003),
+                            known mononymously as Stacey, is a Filipino singer, rapper, and dancer under Star
+                            Music. She is one of the main rappers of the Filipino girl group Bini.
+                        </p>
+                        <blockquote>
+                            Leader, Lead Vocal, Lead Rapper
+                        </blockquote>
+                        <p>Birthdate: January 26, 2004 <br>
+                            Zodiac Sign: Aquarius <br>
+                            Height: 168 centimeters <br>
+                            Favorite Colors: White, black, mustard yellow</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="about-img-wrap animate-fade-in-up delay-1">
+                        <img class="about-img" src="images/artists/stacey.jpg" alt="Artist working in studio"
+                            loading="lazy">
+                    </div>
+                </div>
+
+                <div class="about-layout">
+                    <div class="about-img-wrap animate-fade-in-up delay-1">
+                        <img class="about-img" src="images/artists/maloi.jpg" alt="Artist working in studio"
+                            loading="lazy">
+                    </div>
+                    <div class="about-text animate-fade-in-up delay-2">
+                        <h2>Bini Maloi</h2>
+                        <p><em><strong class="maloi_artist">Mary Loi Yves Ricalde </strong></em> (born May 27, 2002),
+                            known professionally as Maloi, is a Filipino singer, performer, and actress under Star
+                            Music. She is one of the main vocalists of the Filipino girl group Bini.
+                        </p>
+                        <blockquote>
+                            Main Vocalist
+                        </blockquote>
+                        <p>Birthdate: May 27, 2002 <br>
+                            Zodiac Sign: Gemini <br>
+                            Height: 163 centimeters <br>
+                            Favorite Colors: Black, white, light pink</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-layoutright">
+                    <div class="about-text animate-fade-in-up delay-2">
+                        <h2>Bini Mikha</h2>
+                        <p><em><strong class="mikha_artist">Mikhaela Janna Jimenea Lim</strong></em> (born November 8,
+                            2003), known professionally as Mikha, is a Filipino singer, rapper, actress and dancer under
+                            Star Music. She is one of the main rappers of the Filipino girl group Bini.
+                        </p>
+                        <blockquote>
+                            Lead Dancer, Main Rapper, Visual
+                        </blockquote>
+                        <p>Birthdate: November 8, 2003 <br>
+                            Zodiac Sign: Scorpio <br>
+                            Height: 162 centimeters <br>
+                            Favorite Colors: Black, red</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="about-img-wrap animate-fade-in-up delay-1">
+                        <img class="about-img" src="images/artists/mikha.jpg" alt="Artist working in studio"
+                            loading="lazy">
+                    </div>
+                </div>
+
+                <div class="about-layout">
+                    <div class="about-img-wrap animate-fade-in-up delay-1">
+                        <img class="about-img" src="images/artists/colet.jpg" alt="Artist working in studio"
+                            loading="lazy">
+                    </div>
+                    <div class="about-text animate-fade-in-up delay-2">
+                        <h2>Bini Colet</h2>
+                        <p><em><strong class="colet_artist">Ma. Nicolette Florenosos Vergara </strong></em> known
+                            professionally as Colet, is a Filipino singer, songwriter, dancer, and rapper under Star
+                            Magic. She is one of the main vocalists of the Filipino girl group Bini.
+                        </p>
+                        <blockquote>
+                            Main Vocalist, Lead Rapper, Lead Dancer
+                        </blockquote>
+                        <p>Birthdate: September 14, 2001<br>
+                            Zodiac Sign: Virgo<br>
+                            Height: 165 centimeters<br>
+                            Favorite Colors: Black</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-layoutright">
+                    <div class="about-text animate-fade-in-up delay-2">
+                        <h2>Bini Aiah</h2>
+                        <p><em><strong class="aiah_artist">Maraiah Queen Jaraula Arceta</strong></em> (born November 8,
+                            2003), known professionally as Aiah, is a Filipino singer, rapper, dancer, and model. Her
+                            career began by participating in school events, modeling, and beauty pageants, winning
+                            titles such as Miss Silka Cebu and Miss Silka Philippines 2018. After gaining early exposure
+                            through various ABS-CBN auditions, she joined Star Hunt Academy (SHA), graduating as one of
+                            the final SHA Girl Trainees in October 2020, which later became the Filipino girl group Bini
+                            and debuted on June 11, 2021.
+                        </p>
+                        <blockquote>
+                            Main Rapper, Visual, Sub-vocalist
+                        </blockquote>
+                        <p>Birthdate: January 27, 2001 <br>
+                            Zodiac Sign: Aquarius <br>
+                            Height: 168 centimeters <br>
+                            Favorite Color: Black</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="about-img-wrap animate-fade-in-up delay-1">
+                        <img class="about-img" src="images/artists/aiah.jpg" alt="Artist working in studio"
+                            loading="lazy">
+                    </div>
+                </div>
+
+                <div class="about-layout">
+                    <div class="about-img-wrap animate-fade-in-up delay-1">
+                        <img class="about-img" src="images/artists/sheena.jpg" alt="Artist working in studio"
+                            loading="lazy">
+                    </div>
+                    <div class="about-text animate-fade-in-up delay-2">
+                        <h2>Bini Sheena</h2>
+                        <p><em><strong class="sheena_artist">Sheena Mae Manuel Catacutan</strong></em> born May 9,
+                            2004), known mononymously as Sheena, is a Filipino singer and dancer under Star Music. She
+                            is the youngest member, main dancer, and one of the sub vocalists of the Filipino girl group
+                            Bini. She was a housemate on Pinoy Big Brother: Otso (2018) with Gwen Apuli.
+                        </p>
+                        <blockquote>
+                            Lead Rapper, Lead Vocalist
+                        </blockquote>
+                        <p>Birthdate: May 9, 2004 <br>
+                            Zodiac Sign: Taurus <br>
+                            Height: 165 centimeters <br>
+                            Favorite Colors: Purple, black</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-layoutright">
+                    <div class="about-text animate-fade-in-up delay-2">
+                        <h2>Bini Gwen</h2>
+                        <p><em><strong class="gwen_artist">Gweneth Llaguno Apuli</strong></em> (born June 19,
+                            2003), known mononymously as Gwen, is a Filipino singer and dancer under Star Music.
+                            She was a housemate on Pinoy Big Brother: Otso (2018) with Sheena Catacutan.
+                        </p>
+                        <blockquote>
+                            Lead Rapper, Lead Vocalist
+                        </blockquote>
+                        <p>Birthdate: June 19, 2003 <br>
+                            Zodiac Sign: Gemini <br>
+                            Height: 168 centimeters <br>
+                            Favorite Color: Pink, Black</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="about-img-wrap animate-fade-in-up delay-1">
+                        <img class="about-img" src="images/artists/gwen.jpg" alt="Artist working in studio"
+                            loading="lazy">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo footer-logo">BINI - Timeline</span>
+                <p>Walo hanggang dulo.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">X</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 Poltergeist Lemniscate All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

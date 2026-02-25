@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BINI</title>
+  <meta name="description"
+    content="Modern, responsive portfolio for an artist featuring elegant gallery layout and smooth animations.">
+
+  <!-- Preconnect and Google Fonts -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="imageimages/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">BINI</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero section">
+      <div class="hero-bg-carousel">
+        <div class="bg-slide" style="background-image: url('images/bg.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg2.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg3.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg4.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg5.jpg');"></div>
+      </div>
+      <div class="container hero-container-relative">
+        <div class="hero-content">
+          <h1 class="hero-title animate-fade-in-up">Walo <br>Hanggang Dulo</h1>
+
+          <p class="hero-subtitle jho animate-fade-in-up delay-1">Jhoanna • </p>
+          <p class="hero-subtitle maloi animate-fade-in-up delay-1">Maloi • </p>
+          <p class="hero-subtitle mikha animate-fade-in-up delay-1">Mikha • </p>
+          <p class="hero-subtitle stacey animate-fade-in-up delay-1">Stacey • </p>
+          <p class="hero-subtitle gwen animate-fade-in-up delay-1">Gwen • </p>
+          <p class="hero-subtitle colet animate-fade-in-up delay-1">Colet • </p>
+          <p class="hero-subtitle sheena animate-fade-in-up delay-1">Sheena • </p>
+          <p class="hero-subtitle aiah animate-fade-in-up delay-1">Aiah</p>
+
+          <div class="hero-actions animate-fade-in-up delay-2">
+            <a href="portfolio.html" class="btn btn-primary">View Gallery</a>
+            <a href="contact.html" class="btn btn-outline">Commission Art</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Artwork -->
+    <section class="featured section bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Albums</h2>
+          <a href="portfolio.html" class="link-arrow">View all albums <span>&rarr;</span></a>
+        </div>
+
+        <div class="grid portfolio-grid">
+          <!-- Item 1 -->
+          <article class="portfolio-item animate-fade-in-up">
+            <div class="portfolio-img-wrap">
+              <img src="images/albums/flames.jpg" alt="FLAMES ALBUM" loading="lazy"
+                class="portfolio-img lightbox-trigger">
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Flames</span>
+                <button class="btn-icon" aria-label="View Fullscreen">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">Flames</h3>
+              <p class="portfolio-year">2025</p>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="portfolio-item animate-fade-in-up delay-1">
+            <div class="portfolio-img-wrap">
+              <img src="images/albums/talaarawan.jpg" alt="Vibrant digital abstract" loading="lazy"
+                class="portfolio-img lightbox-trigger">
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Talaarawan</span>
+                <button class="btn-icon" aria-label="View Fullscreen">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">Talaarawan</h3>
+              <p class="portfolio-year">2024</p>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="portfolio-item animate-fade-in-up delay-2">
+            <div class="portfolio-img-wrap">
+              <img src="images/albums/feel good.jpg" alt="Sculpture or sketch" loading="lazy"
+                class="portfolio-img lightbox-trigger">
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Feel Good</span>
+                <button class="btn-icon" aria-label="View Fullscreen">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title">Feel Good</h3>
+              <p class="portfolio-year">2022</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo footer-logo">BINI FANMADE WEB</span>
+        <p>Poltergeist Lemniscate</p>
+      </div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">X</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2026 Poltergeist Lemniscate All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Element -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Expanded Artwork" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+</body>
+
+</html>

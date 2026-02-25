@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Elena R. Art</title>
+    <meta name="description"
+        content="View the complete artwork gallery of Elena R. including oil paintings, digital art, and sculptures.">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imageimages/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">BINI</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="section">
+            <div class="container margin-top-header" style="padding-top: 4rem;">
+                <h1 class="section-title animate-fade-in-up">Gallery</h1>
+
+                <div class="filters animate-fade-in-up delay-1">
+                    <button class="filter-btn active" data-filter="albums">All Albums</button>
+                    <button class="filter-btn" data-filter="singles">Singles</button>
+                    <button class="filter-btn" data-filter="endorsements">Endorsements</button>
+                    <button class="filter-btn" data-filter="concerts">Concerts</button>
+                </div>
+
+                <div class="grid portfolio-grid" id="gallery-grid">
+                    <!-- Painting 1 -->
+                    <article class="portfolio-item animate-fade-in-up" data-category="albums">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/albums/flames.jpg" alt="Abstract painting in blue and gold" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Flames</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Flames</h3>
+                            <p class="portfolio-year">2025</p>
+                        </div>
+                    </article>
+
+                    <!-- Digital 1 -->
+                    <article class="portfolio-item animate-fade-in-up delay-1" data-category="albums">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/albums/talaarawan.jpg" alt="Vibrant digital abstract" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Talaarawan</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Talaarawan</h3>
+                            <p class="portfolio-year">2022</p>
+                        </div>
+                    </article>
+
+                    <!-- Sketch 1 -->
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="albums">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/albums/feel good.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Feel Good</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Feel Good</h3>
+                            <p class="portfolio-year">2022</p>
+                        </div>
+                    </article>
+
+                    <!-- Painting 2 -->
+                    <article class="portfolio-item animate-fade-in-up delay-1" data-category="albums">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/albums/born to win.jpg" alt="Red & Black abstract texture" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Born to Win</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Born to Win</h3>
+                            <p class="portfolio-year">2021</p>
+                        </div>
+                    </article>
+
+                    <!-- Digital 2 -->
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="singles">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/albums/blink twice.jpg" alt="Minimal geometry" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Blink Twice</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Blink Twice (Single)</h3>
+                            <p class="portfolio-year">2025</p>
+                        </div>
+                    </article>
+
+                    <!-- Sketch 2 -->
+                    <article class="portfolio-item animate-fade-in-up delay-1" data-category="singles">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/albums/shagidi.jpg" alt="Sketchpad art" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Shagidi</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Shagidi (Single)</h3>
+                            <p class="portfolio-year">2025</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/angel.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Angel</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Angel</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/belo.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Belo</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Belo</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/bioderm.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Bioderm</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Bioderm</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/coke.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Coke</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Coke</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/cornetto.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Cornetto</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Cornetto</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/enervon.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Enervon</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Enervon</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/fudgeebar.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Fudgee Bar</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Fudgee Bar</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/jollibee.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Jollibee</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Jollibee</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/keratin.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Keratin</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Keratin</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/maybelline.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Maybeline</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Maybelline</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/modess.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Modess</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Modess</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/nescafe.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Nescafe</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Nescafe</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/payless.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Payless</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Payless</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/penshoppe.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Penshoppe</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Penshoppe</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/ponds.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Ponds</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Ponds</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/puregold.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Puregold</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Puregold</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/shopee.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Shopee</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Shopee</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/sterling.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Sterling</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Sterling</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item animate-fade-in-up delay-2" data-category="endorsements">
+                        <div class="portfolio-img-wrap">
+                            <img src="images/endorsements/urban smiles.jpg" alt="Sculpture or sketch" loading="lazy"
+                                class="portfolio-img lightbox-trigger">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Urban Smiles</span>
+                                <button class="btn-icon" aria-label="View Fullscreen"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Urban Smiles</h3>
+                            <p class="portfolio-year">Bini</p>
+                        </div>
+                    </article>
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo footer-logo">BINI</span>
+                <p>Walo hanggang dulo.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">X</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 Poltergeist Lemniscate All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Element -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Expanded Artwork" class="lightbox-img">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+</body>
+
+</html>

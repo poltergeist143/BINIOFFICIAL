@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINI - HISTORY</title>
+    <meta name="description" content="Past and upcoming exhibitions, gallery shows, and art fairs featuring Elena R.">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imageimages/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 4rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 14px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--text-main);
+            box-shadow: 0 0 0 4px var(--bg-surface);
+            z-index: 1;
+            transition: var(--transition);
+        }
+
+        .timeline-item:hover::before {
+            background: var(--accent);
+            transform: scale(1.2);
+        }
+
+        .timeline-year {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .timeline-content {
+            background: var(--bg-color);
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+        }
+
+        .timeline-content:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-3px);
+        }
+
+        .exhibition-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .exhibition-location {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .timeline::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .timeline-item {
+                width: 50%;
+                padding-left: 0;
+                padding-right: 40px;
+                margin-left: 0;
+            }
+
+            .timeline-item:nth-child(even) {
+                margin-left: 50%;
+                padding-right: 0;
+                padding-left: 40px;
+            }
+
+            .timeline-item::before {
+                left: auto;
+                right: -7px;
+            }
+
+            .timeline-item:nth-child(even)::before {
+                left: -7px;
+                right: auto;
+            }
+
+            .timeline-content {
+                text-align: right;
+            }
+
+            .timeline-item:nth-child(even) .timeline-content {
+                text-align: left;
+            }
+        }
+    </style>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body class="bg-surface">
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">History</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="timeline.html" class="nav-link active">Timeline</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="section">
+            <div class="container margin-top-header" style="padding-top: 4rem;">
+                <h1 class="section-title animate-fade-in-up">Timeline</h1>
+
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item animate-fade-in-up delay-1">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2018</span>
+                            <h3 class="exhibition-title">Star Hunt Academy (SHA)</h3>
+                            <p class="exhibition-location">a training camp for young performers to develop their skills.
+                                which had 250 auditionees between the ages of 16 and 19 years from all over the
+                                Philippines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item animate-fade-in-up delay-2">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2019</span>
+                            <h3 class="exhibition-title"> Pinoy Big Brother: Otso's </h3>
+                            <p class="exhibition-location">Celebr8 at the Big Night</p>
+                            <p>On August 3, 2019, the group debuted as SHA trainees during Pinoy Big Brother: Otso's
+                                Celebr8 at the Big Night online pre-show.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item animate-fade-in-up delay-1">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2021–2022</span>
+                            <h3 class="exhibition-title">Debut"</h3>
+                            <p class="exhibition-location">Born to Win</p>
+                            <p>Bini released multiple teasers leading to their debut, with the first one coming out on
+                                May 4, 2021, through a QR code leading to an image that read "Are you ready for the
+                                Biniverse?" The same month, their music label, Star Music, announced the group's
+                                premiere with the single "Born to Win", which was released on June 4.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item animate-fade-in-up delay-2">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2022</span>
+                            <h3 class="exhibition-title">Feel Good</h3>
+                            <p class="exhibition-location">Second Studio Album</p>
+                            <p> On September 29, Bini released their second studio album, Feel Good, which consisted of
+                                five original songs: "No Fear", "Lagi", "I Feel Good", "Huwag Muna Tayong Umuwi",
+                                "Strings"</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item animate-fade-in-up delay-2">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2023–2024</span>
+                            <h3 class="exhibition-title">Domestic success</h3>
+                            <p class="exhibition-location">Pantropiko</p>
+                            <p> The group released the singles "Karera" and "Pantropiko". "Karera" became widely
+                                recognized at school graduation ceremonies for its themes and lyrics, which resonated
+                                with students. Bini gained further recognition after "Pantropiko" went viral on TikTok,
+                                being regarded as a summer anthem in the Philippines. Its trend led to the "Pantropiko
+                                Dance Challenge", in which millions of users participated.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item animate-fade-in-up delay-2">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024</span>
+                            <h3 class="exhibition-title">Talaarawan</h3>
+                            <p class="exhibition-location">Third Album</p>
+                            <p> Bini released the EP Talaarawan, which consisted of six songs: "Pantropiko", "Karera",
+                                "Salamin Salamin", "Ang Huling Cha Cha", "Na Na Nandito Lang"</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animate-fade-in-up delay-1">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024</span>
+                            <h3 class="exhibition-title">Biniverse"</h3>
+                            <p class="exhibition-location">First Tour</p>
+                            <p>In June 28, 2024, Bini began their first tour, titled Biniverse, with a three-day concert
+                                at the New Frontier Theater in Quezon City. It was followed by stops in Baguio, Cebu
+                                City, and General Santos in July, and an overseas leg in Canada in August. In November,
+                                the group held another three-day show, titled the Grand Biniverse, at the Araneta
+                                Coliseum in Quezon City. Bini became the first Filipino girl group to hold three
+                                consecutive sold-out shows at the New Frontier Theater as well as the Araneta Coliseum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animate-fade-in-up delay-1">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2025</span>
+                            <h3 class="exhibition-title">Blink Twice"</h3>
+                            <p class="exhibition-location">New Single</p>
+                            <p>On February 4, 2025, Bini renewed their contracts with Star Magic and Star Music. On
+                                February 13, the group released the new single "Blink Twice"
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background-color: var(--bg-color);">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo footer-logo">BINI - Timeline</span>
+                <p>Walo hanggang dulo.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">X</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 Poltergeist Lemniscate All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
