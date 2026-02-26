@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Poltergeist</title>
-    <meta name="description" content="Get in touch with Elena R. for inquiries, art commissions, and studio visits.">
+    <title>Designer</title>
+    <meta name="description" content="Learn more about the artist Elena R., her creative process, and artistic vision.">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imageimages/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -20,76 +20,56 @@
         .contact-layout {
             display: grid;
             gap: 4rem;
-        }
-
-        .contact-info h2 {
-            margin-bottom: 1rem;
-        }
-
-        .contact-info p {
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-        }
-
-        .contact-details {
-            margin-bottom: 3rem;
-        }
-
-        .contact-detail-item {
-            display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            font-size: 1.05rem;
         }
 
-        .contact-detail-item svg {
-            color: var(--accent);
+        .contact-layoutright {
+            display: grid;
+            gap: 4rem;
+            align-items: center;
         }
 
-        .contact-form {
-            background: var(--bg-surface);
-            padding: 3rem;
+        .contact-img {
             border-radius: 4px;
             box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
         }
 
-        .form-group {
+        .contact-img:hover {
+            box-shadow: var(--shadow-hover);
+        }
+
+        .contact-text h2 {
             margin-bottom: 1.5rem;
         }
 
-        .form-label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            font-size: 0.9rem;
+        .contact-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+            font-size: 1.05rem;
         }
 
-        .form-control {
-            width: 100%;
-            padding: 1rem;
-            border: 1px solid var(--border-color);
-            background: var(--bg-color);
+
+
+        .contact-text blockquote {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-style: italic;
             color: var(--text-main);
-            font-family: inherit;
-            border-radius: 2px;
-            transition: var(--transition);
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--text-main);
-            box-shadow: 0 0 0 1px var(--text-main);
-        }
-
-        textarea.form-control {
-            resize: vertical;
-            min-height: 150px;
+            border-left: 3px solid var(--accent);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
         }
 
         @media (min-width: 768px) {
             .contact-layout {
-                grid-template-columns: 1fr 1.5fr;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-layoutright {
+                grid-template-columns: 1fr 1fr;
             }
         }
     </style>
@@ -99,7 +79,7 @@
 <body>
     <header class="header">
         <div class="container header-inner">
-            <a href="index.html" class="logo">The Creator</a>
+            <a href="contact.html" class="logo">DESIGNER</a>
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
@@ -120,70 +100,39 @@
     <main id="main-content">
         <section class="section">
             <div class="container margin-top-header" style="padding-top: 4rem;">
+                <h1 class="section-title animate-fade-in-up">Poltergeist Lemniscate</h1>
+
                 <div class="contact-layout">
-
-                    <div class="contact-info animate-fade-in-up delay-1">
-                        <h1 class="section-title" style="text-align: left;">Get in Touch</h1>
-                        <p>For inquiries, suggestions and support. Thank you.</p>
-
-                        <div class="contact-details">
-                            <div class="contact-detail-item">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                    <polyline points="22,6 12,13 2,6" />
-                                </svg>
-                                <span>poltergeistaylor@gmail.com</span>
-                            </div>
-                            <div class="contact-detail-item">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg>
-                                <span>Cebu City, Philippines</span>
-                            </div>
-                        </div>
-
-                        <h3>Follow</h3>
-                        <div class="footer-socials" style="justify-content: flex-start; margin-top: 1rem;">
-                            <a href="#" aria-label="Instagram">Instagram</a> &middot;
-                            <a href="#" aria-label="Facebook">Facebook</a> &middot;
-                            <a href="#" aria-label="Twitter">Twitter</a>
-                        </div>
+                    <div class="contact-img-wrap animate-fade-in-up delay-1">
+                        <img class="contact-img" src="images/artists/me.jpg" alt="Artist working in studio"
+                            loading="lazy">
                     </div>
+                    <div class="contact-text animate-fade-in-up delay-2">
+                        <h2>Norman Vincent Digamos</h2>
+                        <p>I'm a dedicated
+                            Technical Support Specialist with 9 years of
+                            experience troubleshooting hardware, software, and networking
+                            issues. Passionate about delivering excellent customer service, I
+                            excel at diagnosing and resolving technical problems efficiently.
+                            With Social Media Management skills. I thrive in fast-paced
+                            environments where problem-solving and communication are key.
+                            Always eager to learn and adapt to new technologies, I aim to
+                            provide seamless IT support to enhance user experience and
+                            business productivity
+                        </p>
+                        <blockquote>
+                            IT Instructor | Technical Support | Designer
+                        </blockquote>
+                        <p>Birthdate: November 19, 1992 <br>
+                            Zodiac Sign: Scorpio <br>
+                            Height: 168 centimeters <br>
+                            Favorite Color: Pink</p>
 
-                    <div class="contact-form-wrap animate-fade-in-up delay-2">
-                        <form action="#" class="contact-form"
-                            onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                            <div class="form-group">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" id="name" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" id="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject" class="form-label">Subject</label>
-                                <select id="subject" class="form-control" required>
-                                    <option value="">Select an option...</option>
-                                    <option value="inquiry">Inquiry</option>
-                                    <option value="suggestions">Suggestions</option>
-                                    <option value="feedback">Feedback</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea id="message" class="form-control" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                        </form>
                     </div>
-
                 </div>
+
+
+
             </div>
         </section>
     </main>
@@ -191,13 +140,13 @@
     <footer class="footer">
         <div class="container footer-inner">
             <div class="footer-brand">
-                <span class="logo footer-logo">Poltergeist Lemniscate</span>
-                <p>Bloom &copy; 2024</p>
+                <span class="logo footer-logo">BINI Fan</span>
+                <p>Certified Bloom.</p>
             </div>
             <div class="footer-socials">
                 <a href="#" aria-label="Instagram">IG</a>
                 <a href="#" aria-label="Facebook">FB</a>
-                <a href="#" aria-label="Twitter">TW</a>
+                <a href="#" aria-label="Twitter">X</a>
             </div>
             <div class="footer-copyright">
                 &copy; 2026 Poltergeist Lemniscate All rights reserved.
