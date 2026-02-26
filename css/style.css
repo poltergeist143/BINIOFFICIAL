@@ -348,6 +348,8 @@ h6 {
 
 .hero-content {
   max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-title {
@@ -494,6 +496,7 @@ h6 {
 
 .hero-actions {
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
