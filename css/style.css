@@ -619,10 +619,21 @@ h6 {
   letter-spacing: 1px;
   color: var(--text-muted);
   position: relative;
+  padding: 0.4rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 15px 50px;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.filter-btn.active,
 .filter-btn:hover {
+  color: var(--text-main);
+  background-color: var(--bg-surface);
+  border-color: var(--border-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.filter-btn.active {
   color: var(--text-main);
 }
 
@@ -638,7 +649,8 @@ h6 {
   transition: var(--transition);
 }
 
-.filter-btn.active::after {
+.filter-btn.active::after,
+.filter-btn:hover::after {
   width: 100%;
 }
 
